@@ -117,6 +117,8 @@ class KeanFahChai:
       <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
       <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3">
       <img src="https://img.shields.io/badge/Responsive%20Design-2ea44f?style=flat-square" alt="Responsive design">
+      <img src="https://img.shields.io/badge/TensorFlow.js-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow.js">
+      <img src="https://img.shields.io/badge/REST%20APIs-555555?style=flat-square" alt="REST APIs">
     </td>
   </tr>
   <tr>
@@ -218,6 +220,15 @@ A unit converter that makes measurement fun.
 
 ### 🌐 Web development
 
+#### 🌿 [FloraMY: Malaysia's Rare Plants, with an AI Identifier](https://github.com/kfahchai-netizen/COS10005-FLORAMY-WEBSITE)
+`HTML5` `CSS3` `JavaScript` `TensorFlow.js` `REST APIs`
+
+A **13-page citizen-science website** for Malaysia's Endangered, Rare and Threatened plants, with about 11,000 lines of hand-written HTML, CSS and JavaScript.
+- **AI plant identifier:** photos go to the **Pl@ntNet API** (top-3 species with match %). Non-plant photos are labelled by a **Hugging Face ViT** model. An **offline TensorFlow.js MobileNet + k-NN** engine takes over when there's no API key or no internet.
+- **FloraBot chat assistant** built with DOM methods: keyword-rule matching, actions such as switching theme or language, and chat history in `sessionStorage`.
+- **Full translation** into **English, Bahasa Melayu and 中文**, using a `MutationObserver`, a `WeakMap` and regex-based message matching.
+- **Dark mode with no white flash**, an animated card filter, an accessible FAQ accordion, a slideshow with swipe support, a lightbox, and scroll-triggered animations.
+
 #### ☕ [Brew & Go: Coffee Shop Website](https://github.com/kfahchai-netizen/COS10026-BREW-AND-GO-WEBSITE-DESIGN)
 `HTML5` `CSS3` `JavaScript`
 
@@ -244,6 +255,7 @@ An **18-page responsive website** for a fictional Malaysian coffee chain, writte
 |---|---|---|
 | **COS30019** | Introduction to Artificial Intelligence | Klotski A* solver · Missionaries & Cannibals BFS · Tic-Tac-Toe Alpha-Beta |
 | **COS10009** | Programming | Zombie Garden (C / raylib) |
+| **COS10005** | Web Development | FloraMY: AI plant-identification website |
 | **COS10026** | Web development | Brew & Go website |
 | **ENG20009** | Engineering Technology Inquiry Project | MODBUS RTU on Raspberry Pi Pico · PDM microphone → Node-RED *(in progress)* |
 | **EEE20006** | Circuits & electronics | Lab work: Thevenin/Norton, circuit response |
