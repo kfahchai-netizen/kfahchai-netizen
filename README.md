@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/kfahchai-netizen">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=2F81F7&center=true&vCenter=true&width=640&lines=Electrical+%26+Electronic+Engineering+Student;Embedded+Systems+%7C+Raspberry+Pi+Pico+%7C+MODBUS;AI+Search+Algorithms+%7C+BFS+%C2%B7+A*+%C2%B7+Alpha-Beta;Game+Dev+in+C%2C+Ruby+%26+Python" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=2F81F7&center=true&vCenter=true&width=640&lines=Electrical+%26+Electronic+Engineering+Student;Embedded+Systems+%7C+Raspberry+Pi+Pico+%7C+MODBUS;AI+Search+Algorithms+%7C+BFS+%C2%B7+A*+%C2%B7+Alpha-Beta;Game+Dev+in+C%23%2C+C%2C+Ruby+%26+Python" alt="Typing SVG" />
   </a>
 </p>
 
@@ -39,7 +39,7 @@ class KeanFahChai:
         self.based_in   = "Kuching, Sarawak, Malaysia 🇲🇾"
         self.focus      = ["Embedded systems", "Industrial communication (MODBUS)",
                            "Circuit analysis", "AI search algorithms", "Game development"]
-        self.languages  = {"C": "embedded & games", "Python": "AI, tools & data",
+        self.languages  = {"C": "embedded & games", "C#": "OOP & games", "Python": "AI, tools & data",
                            "Ruby": "games", "HTML/CSS/JS": "web", "MATLAB": "engineering maths"}
         self.motto      = "Understand it, then build it."
 ```
@@ -69,6 +69,7 @@ class KeanFahChai:
     <td><b>Programming languages</b></td>
     <td>
       <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black" alt="C">
+      <img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt="C#">
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
       <img src="https://img.shields.io/badge/Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white" alt="Ruby">
       <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript">
@@ -106,6 +107,7 @@ class KeanFahChai:
   <tr>
     <td><b>Game development</b></td>
     <td>
+      <img src="https://img.shields.io/badge/SplashKit-F7A600?style=flat-square" alt="SplashKit">
       <img src="https://img.shields.io/badge/raylib-000000?style=flat-square" alt="raylib">
       <img src="https://img.shields.io/badge/Gosu-8A2BE2?style=flat-square" alt="Gosu">
       <img src="https://img.shields.io/badge/SDL2-1D4ED8?style=flat-square" alt="SDL2">
@@ -168,6 +170,15 @@ An unbeatable Tic-Tac-Toe agent built on the AIMA framework.
 ---
 
 ### 🎮 Game development
+
+#### ⛏️ [Mining-Maze Game](https://github.com/kfahchai-netizen/COS20007-MINING-MAZE-GAME)
+`C#` `.NET 8` `SplashKit` `OOP` `Design Patterns`
+
+A 2D pixel-art mining game. Dig through a randomly generated maze, collect diamonds before time runs out, and keep a thieving ghost away. *(COS20007 Object-Oriented Programming. The original version won the unit's top-scorer award; this repo is a rebuild.)*
+- **Random mazes** from a depth-first recursive backtracker, with ore embedded only where it can be reached.
+- **Mining system:** block strength vs. tool efficiency, stamina, an inventory, a store, tool upgrades and a 3×3 bomb.
+- **Five design patterns:** State (screens), Factory (items, blocks, levels), Strategy (the ghost attacks or steals), Singleton (sound) and Observer (item events).
+- **Headless logic tests**, including a bot that wins all three levels on random mazes, plus original pixel art and chiptune sounds generated in code.
 
 #### 🌻 [Zombie Garden: Plants vs. Zombies-Style Tower Defence](https://github.com/kfahchai-netizen/COS10009-C-GAME-CODING-PLANT-AND-ZOMBIE)
 `C` `raylib`
@@ -254,6 +265,7 @@ An **18-page responsive website** for a fictional Malaysian coffee chain, writte
 | Course | Topic | Related work |
 |---|---|---|
 | **COS30019** | Introduction to Artificial Intelligence | Klotski A* solver · Missionaries & Cannibals BFS · Tic-Tac-Toe Alpha-Beta |
+| **COS20007** | Object-Oriented Programming | Mining-Maze Game (C# / SplashKit) |
 | **COS10009** | Programming | Zombie Garden (C / raylib) |
 | **COS10005** | Web Development | FloraMY: AI plant-identification website |
 | **COS10026** | Web development | Brew & Go website |
