@@ -38,7 +38,8 @@ class KeanFahChai:
         self.university = "Swinburne University of Technology, Sarawak Campus"
         self.based_in   = "Kuching, Sarawak, Malaysia 🇲🇾"
         self.focus      = ["Embedded systems", "Industrial communication (MODBUS)",
-                           "Circuit analysis", "AI search algorithms", "Game development"]
+                           "Circuit analysis", "Traffic simulation", "GIS & machine learning",
+                           "AI search algorithms", "Game development"]
         self.languages  = {"C": "embedded & games", "C#": "OOP & games", "Python": "AI, tools & data",
                            "Ruby": "games", "HTML/CSS/JS": "web", "MATLAB": "engineering maths"}
         self.motto      = "Understand it, then build it."
@@ -52,7 +53,9 @@ class KeanFahChai:
 |---|---|
 | ⚡ **Embedded systems** | Register-level programming of the **Raspberry Pi Pico (RP2040)** on a Cytron EDU PICO board: GPIO, a **5×7 LED matrix** with scrolling text from **Serial and SD card** |
 | 🏭 **Industrial communication** | Implementing a **MODBUS RTU slave over RS-485** on the Pico, and researching the protocol's history, architecture, physical layer and data model |
-| 🎙️ **IoT / sensing (group project)** | Reading a **PDM microphone** on the Pico and sending sound levels to a **Node-RED** dashboard over MODBUS |
+| 🎙️ **IoT / sensing (group project)** | [Smart Noise Monitor](https://github.com/kfahchai-netizen/ENG20009-SMART-NOISE-MONITOR): **PDM microphone** sound levels from two Picos to a **Node-RED** dashboard over MODBUS |
+| 🚦 **Traffic engineering** | [SUMO ⇄ Simulink fuzzy traffic control](https://github.com/kfahchai-netizen/ENG20010-SUMO-SIMULINK-INTEGRATION) for Kuching's ART corridor |
+| ⛰️ **Research (YRP 2026)** | [Machine-learning landslide susceptibility mapping](https://github.com/kfahchai-netizen/YRP2026-LANDSLIDE-SUSCEPTIBILITY-KUNDASANG) of Kundasang, Sabah with QGIS and Sentinel-2 |
 | 🔌 **Circuits & electronics** | Lab work building, measuring and analysing circuits: Thevenin/Norton equivalents and circuit response |
 | 📐 **Engineering maths** | Mathematical methods and statistics in **MATLAB** live scripts |
 
@@ -83,6 +86,23 @@ class KeanFahChai:
       <img src="https://img.shields.io/badge/MODBUS%20RTU-RS--485-555555?style=flat-square" alt="MODBUS RTU">
       <img src="https://img.shields.io/badge/Node--RED-8F0000?style=flat-square&logo=nodered&logoColor=white" alt="Node-RED">
       <img src="https://img.shields.io/badge/Circuit%20Analysis-FFB000?style=flat-square" alt="Circuit analysis">
+    </td>
+  </tr>
+  <tr>
+    <td><b>Simulation & control</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Simulink-0076A8?style=flat-square&logo=mathworks&logoColor=white" alt="Simulink">
+      <img src="https://img.shields.io/badge/SUMO%20%2B%20TraCI-2E7D32?style=flat-square" alt="SUMO">
+      <img src="https://img.shields.io/badge/Fuzzy%20Logic-8E24AA?style=flat-square" alt="Fuzzy logic">
+    </td>
+  </tr>
+  <tr>
+    <td><b>GIS & machine learning</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/QGIS-589632?style=flat-square&logo=qgis&logoColor=white" alt="QGIS">
+      <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn">
+      <img src="https://img.shields.io/badge/XGBoost%20%C2%B7%20LightGBM-EB5424?style=flat-square" alt="XGBoost and LightGBM">
+      <img src="https://img.shields.io/badge/Sentinel--2-0B3D91?style=flat-square" alt="Sentinel-2">
     </td>
   </tr>
   <tr>
@@ -139,6 +159,35 @@ class KeanFahChai:
 ## 🚀 Featured projects
 
 > Click a project name to open its repository. Each one has screenshots, setup steps and a technical walkthrough.
+
+### 🔧 Engineering design & research
+
+#### ⛰️ [ML Landslide Susceptibility Mapping: Kundasang, Sabah](https://github.com/kfahchai-netizen/YRP2026-LANDSLIDE-SUSCEPTIBILITY-KUNDASANG)
+`Python` `QGIS` `XGBoost` `LightGBM` `scikit-learn` `Sentinel-2`
+
+My **Young Researcher Program 2026** research project: where are landslides most likely around Kampung Mesilau, below Mount Kinabalu?
+- Built a **198-point landslide / non-landslide inventory** (2013–2025) and **17 conditioning factors** from the AW3D30 DEM and Sentinel-2 imagery in QGIS.
+- Removed redundant factors with **Pearson correlation and VIF/TOL** tests, then compared **six models**: XGBoost, LightGBM, Random Forest, CatBoost, AdaBoost and SVM.
+- **XGBoost scored best (ROC-AUC 0.840)**; NDVI, elevation and distance to river were the strongest factors.
+- Produced **five-class susceptibility maps** showing about 28–30 % of the area as High or Very High.
+
+#### 🚦 [SUMO ⇄ Simulink Fuzzy Traffic Control](https://github.com/kfahchai-netizen/ENG20010-SUMO-SIMULINK-INTEGRATION)
+`SUMO` `TraCI` `Python` `MATLAB/Simulink` `Fuzzy Logic`
+
+Smart traffic signals for Kuching's new ART corridor. *(ENG20010 Engineering Technology Design Project)*
+- Real **OpenStreetMap road networks** of Jalan Tun Salahuddin and the Darul Hana station area, simulated in **SUMO 1.24**.
+- A **Python TraCI server** streams detector data as JSON over TCP to a **MATLAB System object** inside Simulink, which sends phase commands back.
+- **Mamdani fuzzy controllers** (15-input roundabout controller, 6-input pedestrian-safety controller) choose signal timing, pedestrian green and emergency halts.
+
+#### 🔊 [Smart Noise Monitor: PDM Mic + Modbus RTU + Node-RED](https://github.com/kfahchai-netizen/ENG20009-SMART-NOISE-MONITOR)
+`C++ / Arduino` `Raspberry Pi Pico W` `Modbus RTU` `RS-485` `Node-RED`
+
+Two networked sound-level meters with alarms and a live dashboard. *(ENG20009 Engineering Technology Inquiry Project, group project)*
+- **Dual-core firmware:** core 0 serves Modbus only, so polling never times out; core 1 handles the microphone, FFT, alarms, LEDs and OLED.
+- Measures **Leq, peak, minimum, mPa, dBFS, dominant frequency and noise dose**, with an OK → WARNING → ALARM → MUTED state machine.
+- **17 input + 8 holding registers**; settings are written from **Node-RED** and kept in EEPROM.
+
+---
 
 ### 🤖 Artificial intelligence: search & game-playing agents
 
@@ -269,9 +318,11 @@ An **18-page responsive website** for a fictional Malaysian coffee chain, writte
 | **COS10009** | Programming | Zombie Garden (C / raylib) |
 | **COS10005** | Web Development | FloraMY: AI plant-identification website |
 | **COS10026** | Web development | Brew & Go website |
-| **ENG20009** | Engineering Technology Inquiry Project | MODBUS RTU on Raspberry Pi Pico · PDM microphone → Node-RED *(in progress)* |
+| **ENG20009** | Engineering Technology Inquiry Project | [Smart Noise Monitor](https://github.com/kfahchai-netizen/ENG20009-SMART-NOISE-MONITOR): PDM mic + MODBUS RTU on Raspberry Pi Pico → Node-RED |
+| **ENG20010** | Engineering Technology Design Project | [SUMO ⇄ Simulink fuzzy traffic control](https://github.com/kfahchai-netizen/ENG20010-SUMO-SIMULINK-INTEGRATION) (Python / MATLAB) |
 | **EEE20006** | Circuits & electronics | Lab work: Thevenin/Norton, circuit response |
 | **MTH20017** | Mathematical Methods & Statistics for Engineering | MATLAB live-script labs |
+| **YRP 2026** | Young Researcher Program (research) | [ML landslide susceptibility mapping](https://github.com/kfahchai-netizen/YRP2026-LANDSLIDE-SUSCEPTIBILITY-KUNDASANG), Kundasang (QGIS / Python) |
 
 ---
 
