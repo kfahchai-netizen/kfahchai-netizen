@@ -38,7 +38,7 @@ class KeanFahChai:
         self.university = "Swinburne University of Technology, Sarawak Campus"
         self.based_in   = "Kuching, Sarawak, Malaysia 🇲🇾"
         self.focus      = ["Embedded systems", "Industrial communication (MODBUS)",
-                           "Circuit analysis", "Traffic simulation", "GIS & machine learning",
+                           "Circuit analysis", "Traffic simulation", "GIS & machine learning", "Computer vision",
                            "AI search algorithms", "Game development"]
         self.languages  = {"C": "embedded & games", "C#": "OOP & games", "Python": "AI, tools & data",
                            "Ruby": "games", "HTML/CSS/JS": "web", "MATLAB": "engineering maths"}
@@ -111,6 +111,9 @@ class KeanFahChai:
       <img src="https://img.shields.io/badge/BFS-6f42c1?style=flat-square" alt="BFS">
       <img src="https://img.shields.io/badge/A*%20Search-6f42c1?style=flat-square" alt="A* search">
       <img src="https://img.shields.io/badge/Minimax%20%2B%20Alpha--Beta-6f42c1?style=flat-square" alt="Minimax">
+      <img src="https://img.shields.io/badge/YOLOv8-111F68?style=flat-square" alt="YOLOv8">
+      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV">
+      <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
       <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter">
     </td>
   </tr>
@@ -189,7 +192,16 @@ Two networked sound-level meters with alarms and a live dashboard. *(ENG20009 En
 
 ---
 
-### 🤖 Artificial intelligence: search & game-playing agents
+### 🤖 Artificial intelligence: computer vision, search & game-playing agents
+
+#### 🛒 [Retail AI Vision: Shelf Monitoring with YOLOv8](https://github.com/kfahchai-netizen/COS30018-RETAIL-AI-VISION)
+`Python` `YOLOv8` `OpenCV` `Streamlit` `Roboflow`
+
+Spots **missing** and **imprecisely placed** products on supermarket shelves and checks them against a planogram. *(COS30018 Intelligent Systems)*
+- **Human-in-the-loop active learning:** model-assisted re-annotation lifted mAP50 from **0.688 to 0.849**.
+- **34 training runs** comparing SGD vs AdamW, learning rates, epochs and YOLOv8n vs v8s. Best models: Missing **mAP50 0.952**, combined **0.863**.
+- **Planogram compliance** with SIFT keypoints, RANSAC homography and IoU slot matching.
+- **Streamlit app** with Detection, Planogram and Contribute pages; user-confirmed detections feed the next training round.
 
 #### 🧩 [AI-Powered Klotski (8-Puzzle) Solver](https://github.com/kfahchai-netizen/COS30019-INTRO-TO-AI-KLOTSKI-PUZZLE)
 `Python` `Matplotlib` `A* Search`
@@ -313,6 +325,7 @@ An **18-page responsive website** for a fictional Malaysian coffee chain, writte
 
 | Course | Topic | Related work |
 |---|---|---|
+| **COS30018** | Intelligent Systems | [Retail AI Vision](https://github.com/kfahchai-netizen/COS30018-RETAIL-AI-VISION): YOLOv8 shelf monitoring + planogram compliance |
 | **COS30019** | Introduction to Artificial Intelligence | Klotski A* solver · Missionaries & Cannibals BFS · Tic-Tac-Toe Alpha-Beta |
 | **COS20007** | Object-Oriented Programming | Mining-Maze Game (C# / SplashKit) |
 | **COS10009** | Programming | Zombie Garden (C / raylib) |
