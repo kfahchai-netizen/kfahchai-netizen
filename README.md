@@ -171,7 +171,7 @@ class KeanFahChai:
 `KiCad` `PCB design` `Digital logic` `Python`
 
 A round, 80 mm, 2-layer PCB: a 555 timer clocks a CD4017 decade counter that chases a ring of 10 LEDs, with adjustable speed. *(Personal hardware project)*
-- Full **schematic → layout → Gerbers** flow: net classes, GND pours, thermal reliefs and reverse-polarity protection, with **0 DRC errors**.
+- Full **schematic → layout → Gerbers** flow: net classes, GND pours, thermal reliefs and reverse-polarity protection. **Verified in KiCad 10:** ERC and DRC 0 errors, PCB and schematic in parity, 3D view.
 - **Design as code:** the schematic and PCB are generated from one Python description using the KiCad API, plus a small custom **A\* autorouter**.
 - Fab-ready Gerber zip, BOM, assembly guide, and photo-style renders with an animated chase.
 
