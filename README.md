@@ -38,7 +38,7 @@ class KeanFahChai:
         self.university = "Swinburne University of Technology, Sarawak Campus"
         self.based_in   = "Kuching, Sarawak, Malaysia 🇲🇾"
         self.focus      = ["Embedded systems", "Industrial communication (MODBUS)",
-                           "Circuit analysis", "Traffic simulation", "GIS & machine learning", "Computer vision",
+                           "Circuit analysis", "PCB design (KiCad)", "Traffic simulation", "GIS & machine learning", "Computer vision",
                            "AI search algorithms", "Game development"]
         self.languages  = {"C": "embedded & games", "C#": "OOP & games", "Python": "AI, tools & data",
                            "Ruby": "games", "HTML/CSS/JS": "web", "MATLAB": "engineering maths"}
@@ -85,6 +85,8 @@ class KeanFahChai:
       <img src="https://img.shields.io/badge/Raspberry%20Pi%20Pico-A22846?style=flat-square&logo=raspberrypi&logoColor=white" alt="Raspberry Pi Pico">
       <img src="https://img.shields.io/badge/MODBUS%20RTU-RS--485-555555?style=flat-square" alt="MODBUS RTU">
       <img src="https://img.shields.io/badge/Node--RED-8F0000?style=flat-square&logo=nodered&logoColor=white" alt="Node-RED">
+      <img src="https://img.shields.io/badge/KiCad-314CB0?style=flat-square&logo=kicad&logoColor=white" alt="KiCad">
+      <img src="https://img.shields.io/badge/PCB%20Design-1E7B3A?style=flat-square" alt="PCB design">
       <img src="https://img.shields.io/badge/Circuit%20Analysis-FFB000?style=flat-square" alt="Circuit analysis">
     </td>
   </tr>
@@ -164,6 +166,14 @@ class KeanFahChai:
 > Click a project name to open its repository. Each one has screenshots, setup steps and a technical walkthrough.
 
 ### 🔧 Engineering design & research
+
+#### 🎡 [LED Wheel: NE555 + CD4017 Running-Light PCB](https://github.com/kfahchai-netizen/PCB-LED-WHEEL-555-CD4017)
+`KiCad` `PCB design` `Digital logic` `Python`
+
+A round, 80 mm, 2-layer PCB: a 555 timer clocks a CD4017 decade counter that chases a ring of 10 LEDs, with adjustable speed. *(Personal hardware project)*
+- Full **schematic → layout → Gerbers** flow: net classes, GND pours, thermal reliefs and reverse-polarity protection, with **0 DRC errors**.
+- **Design as code:** the schematic and PCB are generated from one Python description using the KiCad API, plus a small custom **A\* autorouter**.
+- Fab-ready Gerber zip, BOM, assembly guide, and photo-style renders with an animated chase.
 
 #### ⛰️ [ML Landslide Susceptibility Mapping: Kundasang, Sabah](https://github.com/kfahchai-netizen/YRP2026-LANDSLIDE-SUSCEPTIBILITY-KUNDASANG)
 `Python` `QGIS` `XGBoost` `LightGBM` `scikit-learn` `Sentinel-2`
