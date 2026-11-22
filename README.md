@@ -1,7 +1,7 @@
 <h1 align="center">Hi there, I'm Kean Fah Chai 👋</h1>
 
 <p align="center">
-  <a href="https://github.com/kfahchai-netizen">
+  <a href="https://github.com/kfahchai">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=2F81F7&center=true&vCenter=true&width=640&lines=Electrical+%26+Electronic+Engineering+Student;Embedded+Systems+%7C+Raspberry+Pi+Pico+%7C+MODBUS;AI+Search+Algorithms+%7C+BFS+%C2%B7+A*+%C2%B7+Alpha-Beta;Game+Dev+in+C%23%2C+C%2C+Ruby+%26+Python" alt="Typing SVG" />
   </a>
 </p>
@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/followers/kfahchai-netizen?label=Followers&style=social" alt="GitHub followers">
-  <img src="https://komarev.com/ghpvc/?username=kfahchai-netizen&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views">
+  <img src="https://img.shields.io/github/followers/kfahchai?label=Followers&style=social" alt="GitHub followers">
+  <img src="https://komarev.com/ghpvc/?username=kfahchai&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views">
 </p>
 
 <!-- 👉 Add your contact links here (remove the comment markers to show them):
@@ -53,9 +53,9 @@ class KeanFahChai:
 |---|---|
 | ⚡ **Embedded systems** | Register-level programming of the **Raspberry Pi Pico (RP2040)** on a Cytron EDU PICO board: GPIO, a **5×7 LED matrix** with scrolling text from **Serial and SD card** |
 | 🏭 **Industrial communication** | Implementing a **MODBUS RTU slave over RS-485** on the Pico, and researching the protocol's history, architecture, physical layer and data model |
-| 🎙️ **IoT / sensing (group project)** | [Smart Noise Monitor](https://github.com/kfahchai-netizen/ENG20009-SMART-NOISE-MONITOR): **PDM microphone** sound levels from two Picos to a **Node-RED** dashboard over MODBUS |
-| 🚦 **Traffic engineering** | [SUMO ⇄ Simulink fuzzy traffic control](https://github.com/kfahchai-netizen/ENG20010-SUMO-SIMULINK-INTEGRATION) for Kuching's ART corridor |
-| ⛰️ **Research (YRP 2026)** | [Machine-learning landslide susceptibility mapping](https://github.com/kfahchai-netizen/YRP2026-LANDSLIDE-SUSCEPTIBILITY-KUNDASANG) of Kundasang, Sabah with QGIS and Sentinel-2 |
+| 🎙️ **IoT / sensing (group project)** | [Smart Noise Monitor](https://github.com/kfahchai/ENG20009-SMART-NOISE-MONITOR): **PDM microphone** sound levels from two Picos to a **Node-RED** dashboard over MODBUS |
+| 🚦 **Traffic engineering** | [SUMO ⇄ Simulink fuzzy traffic control](https://github.com/kfahchai/ENG20010-SUMO-SIMULINK-INTEGRATION) for Kuching's ART corridor |
+| ⛰️ **Research (YRP 2026)** | [Machine-learning landslide susceptibility mapping](https://github.com/kfahchai/YRP2026-LANDSLIDE-SUSCEPTIBILITY-KUNDASANG) of Kundasang, Sabah with QGIS and Sentinel-2 |
 | 🔌 **Circuits & electronics** | Lab work building, measuring and analysing circuits: Thevenin/Norton equivalents and circuit response |
 | 📐 **Engineering maths** | Mathematical methods and statistics in **MATLAB** live scripts |
 
@@ -167,7 +167,7 @@ class KeanFahChai:
 
 ### 🔧 Engineering design & research
 
-#### 🎡 [LED Wheel: NE555 + CD4017 Running-Light PCB](https://github.com/kfahchai-netizen/PCB-LED-WHEEL-555-CD4017)
+#### 🎡 [LED Wheel: NE555 + CD4017 Running-Light PCB](https://github.com/kfahchai/PCB-LED-WHEEL-555-CD4017)
 `KiCad` `PCB design` `Digital logic` `Python`
 
 A round, 80 mm, 2-layer PCB: a 555 timer clocks a CD4017 decade counter that chases a ring of 10 LEDs, with adjustable speed. *(Personal hardware project)*
@@ -175,7 +175,7 @@ A round, 80 mm, 2-layer PCB: a 555 timer clocks a CD4017 decade counter that cha
 - **Design as code:** the schematic and PCB are generated from one Python description using the KiCad API, plus a small custom **A\* autorouter**.
 - Fab-ready Gerber zip, BOM, assembly guide, and photo-style renders with an animated chase.
 
-#### ⛰️ [ML Landslide Susceptibility Mapping: Kundasang, Sabah](https://github.com/kfahchai-netizen/YRP2026-LANDSLIDE-SUSCEPTIBILITY-KUNDASANG)
+#### ⛰️ [ML Landslide Susceptibility Mapping: Kundasang, Sabah](https://github.com/kfahchai/YRP2026-LANDSLIDE-SUSCEPTIBILITY-KUNDASANG)
 `Python` `QGIS` `XGBoost` `LightGBM` `scikit-learn` `Sentinel-2`
 
 My **Young Researcher Program 2026** research project: where are landslides most likely around Kampung Mesilau, below Mount Kinabalu?
@@ -184,7 +184,7 @@ My **Young Researcher Program 2026** research project: where are landslides most
 - **XGBoost scored best (ROC-AUC 0.840)**; NDVI, elevation and distance to river were the strongest factors.
 - Produced **five-class susceptibility maps** showing about 28–30 % of the area as High or Very High.
 
-#### 🚦 [SUMO ⇄ Simulink Fuzzy Traffic Control](https://github.com/kfahchai-netizen/ENG20010-SUMO-SIMULINK-INTEGRATION)
+#### 🚦 [SUMO ⇄ Simulink Fuzzy Traffic Control](https://github.com/kfahchai/ENG20010-SUMO-SIMULINK-INTEGRATION)
 `SUMO` `TraCI` `Python` `MATLAB/Simulink` `Fuzzy Logic`
 
 Smart traffic signals for Kuching's new ART corridor. *(ENG20010 Engineering Technology Design Project)*
@@ -192,7 +192,7 @@ Smart traffic signals for Kuching's new ART corridor. *(ENG20010 Engineering Tec
 - A **Python TraCI server** streams detector data as JSON over TCP to a **MATLAB System object** inside Simulink, which sends phase commands back.
 - **Mamdani fuzzy controllers** (15-input roundabout controller, 6-input pedestrian-safety controller) choose signal timing, pedestrian green and emergency halts.
 
-#### 🔊 [Smart Noise Monitor: PDM Mic + Modbus RTU + Node-RED](https://github.com/kfahchai-netizen/ENG20009-SMART-NOISE-MONITOR)
+#### 🔊 [Smart Noise Monitor: PDM Mic + Modbus RTU + Node-RED](https://github.com/kfahchai/ENG20009-SMART-NOISE-MONITOR)
 `C++ / Arduino` `Raspberry Pi Pico W` `Modbus RTU` `RS-485` `Node-RED`
 
 Two networked sound-level meters with alarms and a live dashboard. *(ENG20009 Engineering Technology Inquiry Project, group project)*
@@ -204,7 +204,7 @@ Two networked sound-level meters with alarms and a live dashboard. *(ENG20009 En
 
 ### 🤖 Artificial intelligence: computer vision, search & game-playing agents
 
-#### 🛒 [Retail AI Vision: Shelf Monitoring with YOLOv8](https://github.com/kfahchai-netizen/COS30018-RETAIL-AI-VISION)
+#### 🛒 [Retail AI Vision: Shelf Monitoring with YOLOv8](https://github.com/kfahchai/COS30018-RETAIL-AI-VISION)
 `Python` `YOLOv8` `OpenCV` `Streamlit` `Roboflow`
 
 Spots **missing** and **imprecisely placed** products on supermarket shelves and checks them against a planogram. *(COS30018 Intelligent Systems)*
@@ -213,7 +213,7 @@ Spots **missing** and **imprecisely placed** products on supermarket shelves and
 - **Planogram compliance** with SIFT keypoints, RANSAC homography and IoU slot matching.
 - **Streamlit app** with Detection, Planogram and Contribute pages; user-confirmed detections feed the next training round.
 
-#### 🧩 [AI-Powered Klotski (8-Puzzle) Solver](https://github.com/kfahchai-netizen/COS30019-INTRO-TO-AI-KLOTSKI-PUZZLE)
+#### 🧩 [AI-Powered Klotski (8-Puzzle) Solver](https://github.com/kfahchai/COS30019-INTRO-TO-AI-KLOTSKI-PUZZLE)
 `Python` `Matplotlib` `A* Search`
 
 A playable 3×3 sliding-tile puzzle with a one-click AI solver.
@@ -222,7 +222,7 @@ A playable 3×3 sliding-tile puzzle with a one-click AI solver.
 - Animated, dark-themed **Matplotlib GUI** with a move counter and click-to-slide controls.
 - Includes a **unit test** that checks the solver on a known position.
 
-#### 🚣 [Missionaries & Cannibals: BFS Solver](https://github.com/kfahchai-netizen/COS30019-INTRO-TO-AI-MISSIONARY_AND_CANNIBAL)
+#### 🚣 [Missionaries & Cannibals: BFS Solver](https://github.com/kfahchai/COS30019-INTRO-TO-AI-MISSIONARY_AND_CANNIBAL)
 `Python` `Matplotlib` `Breadth-First Search`
 
 The classic river-crossing puzzle, playable by hand or solved by AI.
@@ -231,7 +231,7 @@ The classic river-crossing puzzle, playable by hand or solved by AI.
 - Game rules and solver live in a **UI-free logic module**, separate from the GUI.
 - Includes an explanatory **Jupyter notebook** and an automated Chinese translation of it.
 
-#### ❌⭕ [Tic-Tac-Toe AI: Minimax + Alpha-Beta Pruning](https://github.com/kfahchai-netizen/COS30019-INTRO-TO-AI-TIC-TAC-TOE)
+#### ❌⭕ [Tic-Tac-Toe AI: Minimax + Alpha-Beta Pruning](https://github.com/kfahchai/COS30019-INTRO-TO-AI-TIC-TAC-TOE)
 `Python` `Jupyter` `Adversarial Search`
 
 An unbeatable Tic-Tac-Toe agent built on the AIMA framework.
@@ -242,7 +242,7 @@ An unbeatable Tic-Tac-Toe agent built on the AIMA framework.
 
 ### 🎮 Game development
 
-#### ⛏️ [Mining-Maze Game](https://github.com/kfahchai-netizen/COS20007-MINING-MAZE-GAME)
+#### ⛏️ [Mining-Maze Game](https://github.com/kfahchai/COS20007-MINING-MAZE-GAME)
 `C#` `.NET 8` `SplashKit` `OOP` `Design Patterns`
 
 A 2D pixel-art mining game. Dig through a randomly generated maze, collect diamonds before time runs out, and keep a thieving ghost away. *(COS20007 Object-Oriented Programming. The original version won the unit's top-scorer award; this repo is a rebuild.)*
@@ -251,7 +251,7 @@ A 2D pixel-art mining game. Dig through a randomly generated maze, collect diamo
 - **Five design patterns:** State (screens), Factory (items, blocks, levels), Strategy (the ghost attacks or steals), Singleton (sound) and Observer (item events).
 - **Headless logic tests**, including a bot that wins all three levels on random mazes, plus original pixel art and chiptune sounds generated in code.
 
-#### 🌻 [Zombie Garden: Plants vs. Zombies-Style Tower Defence](https://github.com/kfahchai-netizen/COS10009-C-GAME-CODING-PLANT-AND-ZOMBIE)
+#### 🌻 [Zombie Garden: Plants vs. Zombies-Style Tower Defence](https://github.com/kfahchai/COS10009-C-GAME-CODING-PLANT-AND-ZOMBIE)
 `C` `raylib`
 
 A complete lane-defence game in about **2,400 lines of C**.
@@ -260,7 +260,7 @@ A complete lane-defence game in about **2,400 lines of C**.
 - **Depth-sorted sprite rendering** with `qsort`, and a **resolution-independent** render target that scales to any window.
 - **Particle system** (explosions, confetti, rain), hit-flash effects, zombie heads that pop off, and settings saved to a binary file.
 
-#### 🎃 [Spooky Halloween: Zombie Survival Shooter](https://github.com/kfahchai-netizen/SPOOKY-HALLOWEEN-MASTER)
+#### 🎃 [Spooky Halloween: Zombie Survival Shooter](https://github.com/kfahchai/SPOOKY-HALLOWEEN-MASTER)
 `Ruby` `Gosu`
 
 A top-down, wave-based shooter.
@@ -273,7 +273,7 @@ A top-down, wave-based shooter.
 
 ### 🖥️ Desktop applications & data tools
 
-#### 📊 [DYDX Sales Report Generator](https://github.com/kfahchai-netizen/DYDX-Sales-Report-Generator)
+#### 📊 [DYDX Sales Report Generator](https://github.com/kfahchai/DYDX-Sales-Report-Generator)
 `Python` `Tkinter` `SQLite` `Matplotlib`
 
 A sales-reporting tool for small businesses.
@@ -282,7 +282,7 @@ A sales-reporting tool for small businesses.
 - **Bulk import from text files** with validation of every line, plus full **search / modify / delete** for items.
 - **Profit/deficit chart** for each item, and your unsaved work is restored when you reopen the app.
 
-#### 🏆 [CMA Performance Pro: Sales Performance Analyzer](https://github.com/kfahchai-netizen/CMA-PERFORMANCE-PRO)
+#### 🏆 [CMA Performance Pro: Sales Performance Analyzer](https://github.com/kfahchai/CMA-PERFORMANCE-PRO)
 `Python` `Tkinter` `Matplotlib` `FPDF`
 
 A dashboard for tracking a sales team.
@@ -290,7 +290,7 @@ A dashboard for tracking a sales team.
 - **Bar charts** and **one-click PDF report export**.
 - **Layered architecture:** UI, business logic and output are separate modules.
 
-#### 📏 [JAV Converter: Unit Converter with Fun Mode](https://github.com/kfahchai-netizen/JAV-Converter)
+#### 📏 [JAV Converter: Unit Converter with Fun Mode](https://github.com/kfahchai/JAV-Converter)
 `Python` `Tkinter` `Pygame`
 
 A unit converter that makes measurement fun.
@@ -302,7 +302,7 @@ A unit converter that makes measurement fun.
 
 ### 🌐 Web development
 
-#### 🌿 [FloraMY: Malaysia's Rare Plants, with an AI Identifier](https://github.com/kfahchai-netizen/COS10005-FLORAMY-WEBSITE)
+#### 🌿 [FloraMY: Malaysia's Rare Plants, with an AI Identifier](https://github.com/kfahchai/COS10005-FLORAMY-WEBSITE)
 `HTML5` `CSS3` `JavaScript` `TensorFlow.js` `REST APIs`
 
 A **13-page citizen-science website** for Malaysia's Endangered, Rare and Threatened plants, with about 11,000 lines of hand-written HTML, CSS and JavaScript.
@@ -311,7 +311,7 @@ A **13-page citizen-science website** for Malaysia's Endangered, Rare and Threat
 - **Full translation** into **English, Bahasa Melayu and 中文**, using a `MutationObserver`, a `WeakMap` and regex-based message matching.
 - **Dark mode with no white flash**, an animated card filter, an accessible FAQ accordion, a slideshow with swipe support, a lightbox, and scroll-triggered animations.
 
-#### ☕ [Brew & Go: Coffee Shop Website](https://github.com/kfahchai-netizen/COS10026-BREW-AND-GO-WEBSITE-DESIGN)
+#### ☕ [Brew & Go: Coffee Shop Website](https://github.com/kfahchai/COS10026-BREW-AND-GO-WEBSITE-DESIGN)
 `HTML5` `CSS3` `JavaScript`
 
 An **18-page responsive website** for a fictional Malaysian coffee chain, written by hand with no frameworks.
@@ -326,8 +326,8 @@ An **18-page responsive website** for a fictional Malaysian coffee chain, writte
 
 | Repository | Contents |
 |---|---|
-| [**Python Programming Exercises**](https://github.com/kfahchai-netizen/PYTHON-IN-CLASS-QUESTION) | 31 programs by topic: conditionals, loops, nested patterns, functions, file I/O and MySQL |
-| [**STPM C Past-Year Solutions**](https://github.com/kfahchai-netizen/STPM-C-IN-CLASS-QUESTION) | Fully commented C solutions to STPM exam questions (2013–2021): arrays, `struct`s, functions, validation |
+| [**Python Programming Exercises**](https://github.com/kfahchai/PYTHON-IN-CLASS-QUESTION) | 31 programs by topic: conditionals, loops, nested patterns, functions, file I/O and MySQL |
+| [**STPM C Past-Year Solutions**](https://github.com/kfahchai/STPM-C-IN-CLASS-QUESTION) | Fully commented C solutions to STPM exam questions (2013–2021): arrays, `struct`s, functions, validation |
 
 ---
 
@@ -335,29 +335,29 @@ An **18-page responsive website** for a fictional Malaysian coffee chain, writte
 
 | Course | Topic | Related work |
 |---|---|---|
-| **COS30018** | Intelligent Systems | [Retail AI Vision](https://github.com/kfahchai-netizen/COS30018-RETAIL-AI-VISION): YOLOv8 shelf monitoring + planogram compliance |
+| **COS30018** | Intelligent Systems | [Retail AI Vision](https://github.com/kfahchai/COS30018-RETAIL-AI-VISION): YOLOv8 shelf monitoring + planogram compliance |
 | **COS30019** | Introduction to Artificial Intelligence | Klotski A* solver · Missionaries & Cannibals BFS · Tic-Tac-Toe Alpha-Beta |
 | **COS20007** | Object-Oriented Programming | Mining-Maze Game (C# / SplashKit) |
 | **COS10009** | Programming | Zombie Garden (C / raylib) |
 | **COS10005** | Web Development | FloraMY: AI plant-identification website |
 | **COS10026** | Web development | Brew & Go website |
-| **ENG20009** | Engineering Technology Inquiry Project | [Smart Noise Monitor](https://github.com/kfahchai-netizen/ENG20009-SMART-NOISE-MONITOR): PDM mic + MODBUS RTU on Raspberry Pi Pico → Node-RED |
-| **ENG20010** | Engineering Technology Design Project | [SUMO ⇄ Simulink fuzzy traffic control](https://github.com/kfahchai-netizen/ENG20010-SUMO-SIMULINK-INTEGRATION) (Python / MATLAB) |
+| **ENG20009** | Engineering Technology Inquiry Project | [Smart Noise Monitor](https://github.com/kfahchai/ENG20009-SMART-NOISE-MONITOR): PDM mic + MODBUS RTU on Raspberry Pi Pico → Node-RED |
+| **ENG20010** | Engineering Technology Design Project | [SUMO ⇄ Simulink fuzzy traffic control](https://github.com/kfahchai/ENG20010-SUMO-SIMULINK-INTEGRATION) (Python / MATLAB) |
 | **EEE20006** | Circuits & electronics | Lab work: Thevenin/Norton, circuit response |
 | **MTH20017** | Mathematical Methods & Statistics for Engineering | MATLAB live-script labs |
-| **YRP 2026** | Young Researcher Program (research) | [ML landslide susceptibility mapping](https://github.com/kfahchai-netizen/YRP2026-LANDSLIDE-SUSCEPTIBILITY-KUNDASANG), Kundasang (QGIS / Python) |
+| **YRP 2026** | Young Researcher Program (research) | [ML landslide susceptibility mapping](https://github.com/kfahchai/YRP2026-LANDSLIDE-SUSCEPTIBILITY-KUNDASANG), Kundasang (QGIS / Python) |
 
 ---
 
 ## 📈 GitHub stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=kfahchai-netizen&show_icons=true&hide_border=true&count_private=true&theme=default" alt="GitHub stats">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kfahchai-netizen&layout=compact&hide_border=true&langs_count=8&theme=default" alt="Top languages">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=kfahchai&show_icons=true&hide_border=true&count_private=true&theme=default" alt="GitHub stats">
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kfahchai&layout=compact&hide_border=true&langs_count=8&theme=default" alt="Top languages">
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=kfahchai-netizen&hide_border=true" alt="GitHub streak">
+  <img src="https://streak-stats.demolab.com?user=kfahchai&hide_border=true" alt="GitHub streak">
 </p>
 
 ---
